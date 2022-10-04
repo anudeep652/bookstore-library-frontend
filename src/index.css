@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,400;1,200;1,300;1,600&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+p.read-more {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+.read-more-link {
+  color: blue;
+}
+.read-more-link:hover {
+  text-decoration: underline;
+}
+
+g,
+svg {
+  cursor: default;
+}
+
+.uparrow {
+  position: absolute;
+  bottom: 100px;
+  cursor: pointer;
+  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
+  --tw-bg-opacity: 1;
+  border-radius: 50%;
+
+  right: 50px;
+  position: fixed;
+  opacity: 10;
+}
+
+.mystyle {
+  margin-left: 10em;
+}
+@media (max-width: 400px) {
+  .uparrow {
+    right: 10px;
+  }
+  .mystyle {
+    margin-left: auto;
+    text-align: center;
+  }
+  .nf {
+    margin-bottom: 5em;
+  }
+  .star-container {
+    display: flex;
+    gap: 0.2em;
+    position: absolute;
+    bottom: 8%;
+
+    right: 7%;
+    font-size: 0.9em;
+  }
+}
+
+@media (min-width: 400px) {
+  .nf {
+    margin-bottom: 25em;
+  }
+  .shgv {
+    width: 100%;
+  }
+  .star-container {
+    gap: 0.5em;
+    display: flex;
+    position: absolute;
+    bottom: 15%;
+    right: 30%;
+  }
+}
